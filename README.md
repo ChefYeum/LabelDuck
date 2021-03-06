@@ -3,6 +3,6 @@ Crowdsourced app for labelling image data sets
 
 ## Data Pipeline
 
-`Raw Data -> Tensorflow Classification -> (Yes) Input to Output Database `
+`Raw Data -> Classification -> (Yes) Output Database `
 
-`Raw Data -> Tensorflow Classification -> (No) Image Segmentation -> Output to User Interface -> Rating System -> Output Database`
+`Raw Data -> Classification -> (No) Image Segmentation -> User Interface -> User Rating System -> Output Database`
