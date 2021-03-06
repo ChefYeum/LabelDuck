@@ -8,6 +8,9 @@
 // and displays a corresponding message in the center of the [Scaffold].
 
 import 'package:flutter/material.dart';
+import 'tabs/labelTab.dart';
+import 'tabs/storeTab.dart';
+import 'tabs/profileTab.dart';
 
 void main() => runApp(MyApp());
 
@@ -35,22 +38,10 @@ class MyStatefulWidget extends StatefulWidget {
 /// This is the private State class that goes with MyStatefulWidget.
 class _MyStatefulWidgetState extends State<MyStatefulWidget> {
   int _selectedIndex = 0;
-  static const TextStyle optionStyle =
-      TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
-  static const List<Widget> _widgetOptions = <Widget>[
-    Text(
-      'Index 0: Label',
-      style: optionStyle,
-    ),
-    Text(
-      'Index 1: Store',
-      style: optionStyle,
-    ),
-    Text(
-      'Index 2: Profile',
-      style: optionStyle,
-    ),
-  ];
+
+  // static const TextStyle optionStyle =
+  //     TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
+  static List<Widget> _widgetOptions = <Widget>[labelTab, storeTab, profileTab];
 
   void _onItemTapped(int index) {
     setState(() {
