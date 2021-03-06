@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 const TextStyle optionStyle =
     TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
 
-var labelTab =
+Widget labelTab =
     Column(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
   Image(
       image: NetworkImage(
