@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def getImage():
-    return "gs://bgn-university-hack-rem-1018.appspot.com/catDog.jpeg"
+    return getJSON()
 
 
 if __name__ == '__main__':
