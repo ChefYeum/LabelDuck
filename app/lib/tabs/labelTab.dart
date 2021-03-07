@@ -7,17 +7,12 @@ var img = Image(
     image: NetworkImage(
         'https://flutter.github.io/assets-for-api-docs/assets/widgets/owl.jpg'));
 
-var button =
-// IconButton(icon: Icon(Icons.star), onPressed: () => print("yee"));
-    ElevatedButton(onPressed: () => print('oink'), child: new Text("Call me"));
+var button = IconButton(icon: Icon(Icons.star), onPressed: () => print("yee"));
+// ElevatedButton(onPressed: () => print('oink'), child: new Text("Call me"));
 
 var imageStack = Stack(children: [
-  // Positioned(
-  //   child: button,
-  //   bottom: 1,
-  // ),
   img,
-  button,
+  Positioned(child: button, height: 50, width: 50),
 ]);
 
 Widget labelTab =
@@ -26,5 +21,5 @@ Widget labelTab =
   Text(
     'Click on the right eye',
     style: optionStyle,
-  )
+  ),
 ]);
