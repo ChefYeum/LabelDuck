@@ -41,7 +41,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
 
   // static const TextStyle optionStyle =
   //     TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
-  static List<Widget> _widgetOptions = <Widget>[labelTab, storeTab, profileTab];
+  static List<Widget> _widgetOptions = <Widget>[labelTab, MyStore(), profileTab];
 
   void _onItemTapped(int index) {
     setState(() {
