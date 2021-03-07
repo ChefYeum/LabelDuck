@@ -54,12 +54,11 @@ flutter:
   assets:
      - images/userIcon.png
      - images/angryBird.png
+     - images/logo.jpg
 
     # To add assets to your application, add an assets section, like this:
 
-
   #   - images/a_dot_ham.jpeg
-
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
