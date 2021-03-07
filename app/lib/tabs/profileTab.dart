@@ -14,7 +14,7 @@ Widget profileTab = Column(
     Text(
       'John Doe',
       style: TextStyle(
-        fontSize: 40.0,
+        fontSize: 30.0,
         fontWeight: FontWeight.bold,
         fontFamily: 'SFProText',
 
@@ -26,7 +26,7 @@ Widget profileTab = Column(
       child: Row(
           children: <Widget>[
             SizedBox(
-              width:100.0,
+              width:110.0,
             ),
             Icon(
               Icons.star,
