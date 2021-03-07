@@ -10,4 +10,3 @@ def getImagesFromFolder(folderName, prefix):
                 images.append(f)
     return images
 
-def model

@@ -1,8 +1,6 @@
 {
-  image1: {
-    "URL": ".com"
-    "location": [0,0],
-    "objectsList":
-  }
+    "URL": "https://storage.googleapis.com/bgn-university-hack-rem-1018.appspot.com/processed2.png",
+    "location": [[5,5], [2,2]],
+    "objectsList": ["dog", "cat"]
 
 }
