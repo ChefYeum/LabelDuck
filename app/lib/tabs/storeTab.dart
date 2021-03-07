@@ -14,12 +14,11 @@ const ksmalltext = TextStyle(
   color: Colors.white,
   fontSize: 15,
 );
-const klarge =  TextStyle(
+const klarge = TextStyle(
   color: Colors.white,
   fontSize: 32,
   fontFamily: 'Oswald',
 );
-
 
 class MyStore extends StatelessWidget {
   // This widget is the root of your application.
@@ -35,10 +34,8 @@ class MyStore extends StatelessWidget {
 }
 
 class Store extends StatelessWidget {
-
   @override
   Widget build(BuildContext context) {
-
     return Scaffold(
       body: Container(
         margin: EdgeInsets.all(20),
@@ -126,7 +123,7 @@ class Store extends StatelessWidget {
                                 origin: Offset(50.0, 50.0),
                                 child: Material(
                                   borderRadius:
-                                  BorderRadius.all(Radius.circular(10)),
+                                      BorderRadius.all(Radius.circular(10)),
                                   child: Padding(
                                     padding: const EdgeInsets.only(
                                         left: 20,
@@ -155,7 +152,6 @@ class Store extends StatelessWidget {
                     child: Image(
                       image: AssetImage('images/angryBird.png'),
                       height: 140,
-
                     ),
                   ),
                 ],
@@ -168,9 +164,6 @@ class Store extends StatelessWidget {
                 style: ktext,
               ),
             ),
-
-
-
             Padding(
               padding: const EdgeInsets.only(top: 20),
               child: Row(
@@ -243,7 +236,6 @@ class Store extends StatelessWidget {
                 ],
               ),
             ),
-
           ],
         ),
       ),
@@ -251,4 +243,4 @@ class Store extends StatelessWidget {
   }
 }
 
-
+Widget storeTab = MyStore();
