@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "bgn-university-hack-rem-1019",
+  "private_key_id": "be84971099cc8f799dc5a138517bf2e94a9ba73d",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDPNyomK7YWwCKC\nvEzXuiMvKZnMQaGNgoqoBFtghzzBwTVgHOTbPxhnc3CXR52Uv2uk4/iCUjpom0yh\nRzXOoBKYBia/nCa1GqvmIuaQ6EMIVtw3cO3EjkpuIfn+vxVtBycTZWTHSEx2xRbt\nUX9d0fWTucWIZUzK1DDNM1ljQs6KyJ2dP8D+xkwyARIT1bi9EaRk54r76ofBvSNi\nsTq0KZw2hmTnJ6qFhXPdo85qP8twJj09TqP+Ycq2mhk4b8caZA6FTAqfKjWFcINy\nOuNku3HyTrQs+XEQOWk6/o9PRRr2N489eY6avRURW3gWQ3TM1kJ1lgMYWKS+AMBv\nINmCv63dAgMBAAECggEAW4TAv+UUYg3v8A/cXHcgbQcRn03pXUenl7d86DAynFyK\nB24bgd3nGGG6+4WsynKUx1nMezp4A5V7jcuWrzCxpaUp3fzId7pU66rEbIG4gWlj\nj7T3vpUduHCXKnUYsHO1RXLFxOJgqyA3FQ+mkjhWHy2wWaJr/TUkbKzeMOHjuRVA\nW9L1P+xpvBubzEhX0PsYhGZhu+/I8yNQin6a5svGxgiIc54GqW0zvkDziGWpdxAg\n3RaWuBV3inR4MYpCizdTADPI2ysdWW6MZd1+BhASpJn+SyvY/7ZUTZAUSDnqq+WY\ncK0qDT3fHUAQnBvalVBuGill7ssQW4hmQ/vUQVp0PQKBgQDnuPBPHt7JwbljeXa3\ne5CayYpUutWOJ1Uk4mbjldMQj8FBz7czpYzIraVHZ0VT0QKQLg3bACFyhvwlu5qQ\n3vsiuGuWsmt10Rkt5SsUHgLDHfmseK1fpslQ2F5Nr9z6c3y6kxTT3XPIWC1mX5Lh\nhCru6UW1DBEBPil7d6BVlYSv0wKBgQDk7OwEEGjn0R9qHP4CCAQ4tSMxFhgAM6Qq\nSEujDXmHXRXCCoNzYt585qILNsu3mqru90Ea8GZBNYQervMoeZG1mO+MtQRd+C2k\ntFKlwYQCLnoiE6NZ+9Xt2Ed12I6naA/LpppNWUio5fCO0wyso5/gyYwwb3OhEhxv\nH93o3+VNjwKBgC9P1lkBP5HIKRcDZNbfts2z2rekEhhdNYg7ZbCQFbEq+NV8GLbF\n1XHf6oAiuMf9Q922WYPeifW9U9xMaqmrrXEQYH87XK+IivCQ+vO3kO7PvvuVBCkk\nf7QvCUopXyAP1matwzHi5FIClvpxBydeefmfzWjC1vH/BC8+ZJE03wubAoGAAc5Q\nqlOK0FFZAxhJdLClf+EF7wwykkXWBLNfTWD81XGJi2dT1CQyhx+2pYoAH2mr8Yin\nzdOZqugGK8vLhUU4Pgt/0EdZSnh7u7HkeQRGy1GciwpGnp4a+O5c2fQkY/OxNDUT\nQIr0xMhTlnzZu77qsvZEEdm/OsUOzl2c/YpOn8cCgYA8ZAMuewuznW4DEUdfiZlW\nPdhgyFXKumz2dFlumEzmlddy5YiafGY08YSKjmcg+WqDT/N3DBsb9pwICMSIxE6t\nj3TCiVQNzmBCkdMa1SHPDgbNar59yv5k4tGWzCHkiBFihTGv3jFiSe4QJtHpS4Tm\ndjqFfoPxgTDhUUCvadGwHA==\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-p7b23@bgn-university-hack-rem-1019.iam.gserviceaccount.com",
+  "client_id": "110137949908726718095",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-p7b23%40bgn-university-hack-rem-1019.iam.gserviceaccount.com"
+}
