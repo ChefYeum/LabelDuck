@@ -88,8 +88,11 @@ class Store extends StatelessWidget {
                           begin: Alignment.topCenter,
                           end: Alignment.bottomCenter,
                           colors: [
-                            Color.fromRGBO(209, 4, 43, 1),
-                            Color.fromRGBO(214, 61, 99, 1),
+                            // Color.fromRGBO(209, 4, 43, 1),
+                            // Color.fromRGBO(214, 61, 99, 1),
+                            //Color.fromRGBO(41, 30, 83, 1),
+                            Color.fromRGBO(81, 73, 112, 1),
+                            Color.fromRGBO(81, 73, 112, 1),
                           ],
                         ),
                         borderRadius: BorderRadius.all(Radius.circular(25)),
@@ -116,6 +119,7 @@ class Store extends StatelessWidget {
                           padding: const EdgeInsets.only(
                               top: 10, right: 15, left: 10),
                           child: Row(
+
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               Transform(
@@ -133,7 +137,8 @@ class Store extends StatelessWidget {
                                     child: Text(
                                       'PLAY AGAIN',
                                       style: TextStyle(
-                                          color: Colors.red.shade600,
+                                          //color: Colors.red.shade600,
+                                          color: Color.fromRGBO(111, 0, 244, 1),
                                           fontSize: 20,
                                           fontWeight: FontWeight.bold),
                                     ),
@@ -149,8 +154,9 @@ class Store extends StatelessWidget {
                   Positioned(
                     bottom: 80,
                     left: 200,
+                    
                     child: Image(
-                      image: AssetImage('images/angryBird.png'),
+                      image: AssetImage('images/bird.png'),
                       height: 140,
                     ),
                   ),
@@ -173,6 +179,7 @@ class Store extends StatelessWidget {
                       color: Color.fromRGBO(81, 73, 112, 1),
                       borderRadius: BorderRadius.all(Radius.circular(30)),
                     ),
+                    child: IntrinsicWidth(
                     child: Padding(
                       padding: const EdgeInsets.only(
                           left: 130, right: 100, top: 10, bottom: 10),
@@ -184,6 +191,7 @@ class Store extends StatelessWidget {
                             fontWeight: FontWeight.bold),
                       ),
                     ),
+                    ),
                   ),
                 ],
               ),
@@ -197,9 +205,10 @@ class Store extends StatelessWidget {
                       color: Color.fromRGBO(81, 73, 112, 1),
                       borderRadius: BorderRadius.all(Radius.circular(30)),
                     ),
+                    child: IntrinsicWidth(
                     child: Padding(
                       padding: const EdgeInsets.only(
-                          left: 130, right: 100, top: 10, bottom: 10),
+                          left: 130, right: 99, top: 10, bottom: 10),
                       child: Text(
                         'Discounts',
                         style: TextStyle(
@@ -208,6 +217,7 @@ class Store extends StatelessWidget {
                             fontWeight: FontWeight.bold),
                       ),
                     ),
+                    ),
                   ),
                 ],
               ),
@@ -221,9 +231,10 @@ class Store extends StatelessWidget {
                       color: Color.fromRGBO(81, 73, 112, 1),
                       borderRadius: BorderRadius.all(Radius.circular(30)),
                     ),
+                    child: IntrinsicWidth(
                     child: Padding(
                       padding: const EdgeInsets.only(
-                          left: 130, right: 100, top: 10, bottom: 10),
+                          left: 120, right: 98, top: 10, bottom: 10),
                       child: Text(
                         'Free Prizes',
                         style: TextStyle(
@@ -231,6 +242,7 @@ class Store extends StatelessWidget {
                             fontSize: 20,
                             fontWeight: FontWeight.bold),
                       ),
+                    ),
                     ),
                   ),
                 ],
