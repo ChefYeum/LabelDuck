@@ -23,8 +23,8 @@ import 'package:flutter/material.dart';
 //   }
 // }
 
-class labelTab extends StatefulWidget {
-  labelTab() : super();
+class LabelTab extends StatefulWidget {
+  LabelTab() : super();
 
   // This widget is the home page of your application. It is stateful, meaning
   // that it has a State object (defined below) that contains fields that affect
@@ -36,10 +36,10 @@ class labelTab extends StatefulWidget {
   // always marked "final".
 
   @override
-  _labelTabState createState() => _labelTabState();
+  _LabelTabState createState() => _LabelTabState();
 }
 
-class _labelTabState extends State<labelTab> {
+class _LabelTabState extends State<LabelTab> {
   int _counter = 0;
 
   void _incrementCounter() {
