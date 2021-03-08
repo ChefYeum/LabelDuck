@@ -53,7 +53,34 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('LabelDuck'),
+        title: Row(
+            children: <Widget>[
+              CircleAvatar(
+                radius:20,
+                backgroundImage: AssetImage('images/logo.jpg'),
+
+              ),
+              SizedBox(width:20.0,),
+              Text('LabelDuck',
+                style: TextStyle(
+                  fontSize: 22.0,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.black,
+                  fontFamily: 'SFProText',
+
+                ),),
+
+            ]
+        ),
+        // child: new Image.asset('images/logo.jpg'),
+        // title: const Text('LabelDuck',
+        // style: TextStyle(
+        //   color: Colors.black,
+        //   fontFamily: 'SFProText',
+        //   fontWeight: FontWeight.bold,
+        // ),
+        // ),
+        backgroundColor: Colors.white,
       ),
       body: Center(
         child: _widgetOptions.elementAt(_selectedIndex),
