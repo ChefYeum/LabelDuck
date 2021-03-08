@@ -8,8 +8,7 @@
 // and displays a corresponding message in the center of the [Scaffold].
 
 import 'package:flutter/material.dart';
-// import 'tabs/labelTab';
-import 'tabs/testTab.dart';
+import 'tabs/labelTab.dart';
 import 'tabs/storeTab.dart';
 import 'tabs/profileTab.dart';
 
@@ -43,7 +42,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
   // static const TextStyle optionStyle =
   //     TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
   static List<Widget> _widgetOptions = <Widget>[
-    TestTab(),
+    LabelTab(),
     MyStore(),
     profileTab
   ];
@@ -92,8 +91,8 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
       bottomNavigationBar: BottomNavigationBar(
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
-            icon: Icon(Icons.home), // TODO: think of different tab name
-            label: 'Label', // TODO: think of different tab name
+            icon: Icon(Icons.home),
+            label: 'Label',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.store),
