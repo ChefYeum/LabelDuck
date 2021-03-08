@@ -8,7 +8,8 @@
 // and displays a corresponding message in the center of the [Scaffold].
 
 import 'package:flutter/material.dart';
-import 'tabs/labelTab.dart';
+// import 'tabs/labelTab';
+import 'tabs/testTab.dart';
 import 'tabs/storeTab.dart';
 import 'tabs/profileTab.dart';
 
@@ -41,7 +42,11 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
 
   // static const TextStyle optionStyle =
   //     TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
-  static List<Widget> _widgetOptions = <Widget>[labelTab, MyStore(), profileTab];
+  static List<Widget> _widgetOptions = <Widget>[
+    TestTab(),
+    MyStore(),
+    profileTab
+  ];
 
   void _onItemTapped(int index) {
     setState(() {
@@ -53,25 +58,24 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Row(
-            children: <Widget>[
-              CircleAvatar(
-                radius:20,
-                backgroundImage: AssetImage('images/logo.jpg'),
-
-              ),
-              SizedBox(width:20.0,),
-              Text('LabelDuck',
-                style: TextStyle(
-                  fontSize: 22.0,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.black,
-                  fontFamily: 'SFProText',
-
-                ),),
-
-            ]
-        ),
+        title: Row(children: <Widget>[
+          CircleAvatar(
+            radius: 20,
+            backgroundImage: AssetImage('images/logo.jpg'),
+          ),
+          SizedBox(
+            width: 20.0,
+          ),
+          Text(
+            'LabelDuck',
+            style: TextStyle(
+              fontSize: 22.0,
+              fontWeight: FontWeight.bold,
+              color: Colors.black,
+              fontFamily: 'SFProText',
+            ),
+          ),
+        ]),
         // child: new Image.asset('images/logo.jpg'),
         // title: const Text('LabelDuck',
         // style: TextStyle(
