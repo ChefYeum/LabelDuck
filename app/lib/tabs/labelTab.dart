@@ -23,6 +23,22 @@ import 'package:flutter/material.dart';
 //   }
 // }
 
+var imageUrls = [
+  "https://storage.googleapis.com/bgn-university-hack-rem-1018.appspot.com/processed2.jpg",
+  "https://storage.googleapis.com/bgn-university-hack-rem-1018.appspot.com/processed1.jpg",
+  "https://storage.googleapis.com/bgn-university-hack-rem-1018.appspot.com/processed3.jpg",
+  "https://storage.googleapis.com/bgn-university-hack-rem-1018.appspot.com/processed4.jpg",
+];
+
+var objectNames = ["Milk", "Cone", "Traffic Light", "Left Lung", "Sign"];
+
+var objLocations = [
+  [350, 311],
+  [289, 157],
+  [350, 311],
+  [289, 157],
+];
+
 class LabelTab extends StatefulWidget {
   LabelTab() : super();
 
@@ -44,12 +60,7 @@ class _LabelTabState extends State<LabelTab> {
 
   void _incrementCounter() {
     setState(() {
-      // This call to setState tells the Flutter framework that something has
-      // changed in this State, which causes it to rerun the build method below
-      // so that the display can reflect the updated values. If we changed
-      // _counter without calling setState(), then the build method would not be
-      // called again, and so nothing would appear to happen.
-      _counter++;
+      _counter = (_counter + 1) % 4;
     });
   }
 
@@ -61,15 +72,23 @@ class _LabelTabState extends State<LabelTab> {
     // The Flutter framework has been optimized to make rerunning build methods
     // fast, so that you can just rebuild anything that needs updating rather
     // than having to individually change instances of widgets.
+    var img = GestureDetector(
+      onTap: _incrementCounter,
+      child: Image.network(imageUrls[_counter]),
+      // width: 200,
+      // fit: BoxFit.cover,
+    );
+    // var button =
+    //     IconButton(icon: Icon(Icons.star), onPressed: _incrementCounter);
+    var objName = objectNames[_counter];
 
-    var button =
-        IconButton(icon: Icon(Icons.star), onPressed: _incrementCounter);
     return Column(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
       Stack(children: [
-        Image.network('https://picsum.photos/250?image=5'),
-        Positioned(child: button, height: 50, width: 50),
+        img
+        // Image.network(imageUrls[_counter]),
+        // Positioned(child: button, height: x, width: y),
       ]),
-      Text('Click on the $_counter')
+      Text('Click on the $objName')
     ]);
     // return Scaffold(
     //   appBar: AppBar(
