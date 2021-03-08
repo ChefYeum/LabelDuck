@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
@@ -9,13 +11,26 @@ var button = IconButton(icon: Icon(Icons.star), onPressed: () => print("yee"));
 
 const HOST_NAME = 'https://localhost:5000/';
 
-Future<String> fetchImageUrl() async {
+class LabelableImage {
+  final String imgUrl;
+  final List<List<int>> coordinates;
+  final List<String> objectList;
+
+  LabelableImage(this.imgUrl, this.coordinates, this.objectList);
+
+  factory LabelableImage.fromJson(Map<String, dynamic> json) {
+    return LabelableImage(
+        json['imgUrl'], json['coordinates'], json['objectList']);
+  }
+}
+
+Future<LabelableImage> fetchImageUrl() async {
   final response = await http.get(Uri.https(HOST_NAME, 'file'));
 
   if (response.statusCode == 200) {
     // If the server did return a 200 OK response,
     // then parse the JSON.
-    return response.body;
+    return LabelableImage.fromJson(jsonDecode(response.body));
   } else {
     // If the server did not return a 200 OK response,
     // then throw an exception.
@@ -23,17 +38,19 @@ Future<String> fetchImageUrl() async {
   }
 }
 
-var futureImgUrl = fetchImageUrl();
+var imageData = fetchImageUrl();
 
-var img = FutureBuilder<String>(
-  future: futureImgUrl,
+String mockImgUrl = 'https://i.imgur.com/OqDnCPq.jpg';
+
+var img = FutureBuilder<LabelableImage>(
+  future: imageData,
   builder: (context, snapshot) {
     if (snapshot.connectionState == ConnectionState.done) {
       return Image.network(
-          snapshot.data ?? 'https://picsum.photos/250?image=5');
+          // 'https://i.imgur.com/OqDnCPq.jpg');
+          snapshot.data?.imgUrl ?? 'https://picsum.photos/250?image=5');
     } else if (snapshot.hasError) {
-      return Image.network(
-          snapshot.data ?? 'https://picsum.photos/250?image=5');
+      return Image.network('http://picsum.photos/250?image=5');
     }
 
     // By default, show a loading spinner.
