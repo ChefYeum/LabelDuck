@@ -55,7 +55,7 @@ class Store extends StatelessWidget {
                       padding: const EdgeInsets.only(
                           left: 18, right: 18, top: 15, bottom: 15),
                       child: Text(
-                        '57 points',
+                        '4 points',
                         style: TextStyle(
                             color: Colors.white,
                             fontSize: 22,
@@ -105,7 +105,7 @@ class Store extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          'Badge: Birds Eye View',
+                          'Badge: Duck\'s View',
                           style: kmiddletext,
                         ),
                         Text(
@@ -117,9 +117,8 @@ class Store extends StatelessWidget {
                         ),
                         Padding(
                           padding: const EdgeInsets.only(
-                              top: 10, right: 15, left: 10),
+                              top: 10, right: 0, left: 10),
                           child: Row(
-
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               Transform(
@@ -154,7 +153,6 @@ class Store extends StatelessWidget {
                   Positioned(
                     bottom: 80,
                     left: 200,
-                    
                     child: Image(
                       image: AssetImage('images/bird.png'),
                       height: 140,
@@ -180,17 +178,17 @@ class Store extends StatelessWidget {
                       borderRadius: BorderRadius.all(Radius.circular(30)),
                     ),
                     child: IntrinsicWidth(
-                    child: Padding(
-                      padding: const EdgeInsets.only(
-                          left: 130, right: 100, top: 10, bottom: 10),
-                      child: Text(
-                        'Gift Cards',
-                        style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 20,
-                            fontWeight: FontWeight.bold),
+                      child: Padding(
+                        padding: const EdgeInsets.only(
+                            left: 130, right: 100, top: 10, bottom: 10),
+                        child: Text(
+                          'Gift Cards',
+                          style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 20,
+                              fontWeight: FontWeight.bold),
+                        ),
                       ),
-                    ),
                     ),
                   ),
                 ],
@@ -206,17 +204,17 @@ class Store extends StatelessWidget {
                       borderRadius: BorderRadius.all(Radius.circular(30)),
                     ),
                     child: IntrinsicWidth(
-                    child: Padding(
-                      padding: const EdgeInsets.only(
-                          left: 130, right: 99, top: 10, bottom: 10),
-                      child: Text(
-                        'Discounts',
-                        style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 20,
-                            fontWeight: FontWeight.bold),
+                      child: Padding(
+                        padding: const EdgeInsets.only(
+                            left: 130, right: 99, top: 10, bottom: 10),
+                        child: Text(
+                          'Discounts',
+                          style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 20,
+                              fontWeight: FontWeight.bold),
+                        ),
                       ),
-                    ),
                     ),
                   ),
                 ],
@@ -232,17 +230,17 @@ class Store extends StatelessWidget {
                       borderRadius: BorderRadius.all(Radius.circular(30)),
                     ),
                     child: IntrinsicWidth(
-                    child: Padding(
-                      padding: const EdgeInsets.only(
-                          left: 120, right: 98, top: 10, bottom: 10),
-                      child: Text(
-                        'Free Prizes',
-                        style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 20,
-                            fontWeight: FontWeight.bold),
+                      child: Padding(
+                        padding: const EdgeInsets.only(
+                            left: 120, right: 98, top: 10, bottom: 10),
+                        child: Text(
+                          'Free Prizes',
+                          style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 20,
+                              fontWeight: FontWeight.bold),
+                        ),
                       ),
-                    ),
                     ),
                   ),
                 ],

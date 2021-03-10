@@ -9,7 +9,7 @@ Widget profileTab = Column(
       backgroundImage: AssetImage('images/userIcon.png'),
     ),
     Text(
-      'John Doe',
+      'Mark Duckerberg',
       style: TextStyle(
         fontSize: 30.0,
         fontWeight: FontWeight.bold,
@@ -60,7 +60,7 @@ Widget profileTab = Column(
           width: 25.0,
         ),
         Text(
-          'Tokens : 10',
+          'Points: 4',
           style: TextStyle(
             fontFamily: 'SFProText',
             fontWeight: FontWeight.bold,
@@ -232,7 +232,7 @@ class Profile extends StatelessWidget {
               backgroundImage: AssetImage('images/userIcon.png'),
             ),
             Text(
-              'John Doe',
+              'Mark Duckerberg',
               style: TextStyle(
                 fontSize: 30.0,
                 fontWeight: FontWeight.bold,
@@ -283,7 +283,7 @@ class Profile extends StatelessWidget {
                   width: 25.0,
                 ),
                 Text(
-                  'Tokens : 10',
+                  'Points: 4',
                   style: TextStyle(
                     fontFamily: 'SFProText',
                     fontWeight: FontWeight.bold,

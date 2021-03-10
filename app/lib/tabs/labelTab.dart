@@ -42,7 +42,14 @@ class _LabelTabState extends State<LabelTab> {
 
     return Column(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
       Stack(children: [img]),
-      Text('Click on the $objName')
+      Text(
+        'Click on the $objName',
+        style: TextStyle(
+          fontSize: 30.0,
+          fontWeight: FontWeight.bold,
+          fontFamily: 'SFProText',
+        ),
+      )
     ]);
   }
 }
